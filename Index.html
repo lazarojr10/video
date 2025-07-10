@@ -5,17 +5,23 @@
     <title>Meu Vídeo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+    
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* ou qualquer cor que você queira */
+        }
+    
         video {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* para preencher a tela sem distorcer */
         }
     </style>
 </head>
